@@ -1,0 +1,187 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.signin-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signin-left, .signin-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.signin-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signin-logo img {
+  width: 50px;
+  margin-bottom: 20px;
+}
+
+.signin-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.signin-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.remember-me {
+  margin-right: 5px;
+}
+
+.forgot-password-link, .signup-link, .signin-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgot-password-link:hover, .signup-link:hover, .signin-link:hover {
+  text-decoration: underline;
+}
+
+.signin-or {
+  margin: 20px 0;
+}
+
+.signin-social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.google-btn, .facebook-btn, .apple-btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.google-btn {
+  background-color: #4285F4;
+  color: #fff;
+}
+
+.facebook-btn {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.apple-btn {
+  background-color: #000;
+  color: #fff;
+}
+
+.signin-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f9f9f9;
+  border-left: 1px solid #eee;
+}
+
+.carousel {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.right-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.right-subtitle {
+  margin: 10px 0;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.filter input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .signin-container {
+    flex-direction: column;
+  }
+
+  .signin-right {
+    border-left: none;
+    border-top: 1px solid #eee;
+  }
+}

@@ -1,0 +1,81 @@
+.shopfy {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: -250px;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .browser-image {
+    width: 100%;
+    margin-top: -150px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .shopfy-con {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    width: 500px;
+  }
+  
+  .cta-button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+  }
+  
+  .cta-button:hover {
+    background-color: #3367d6;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-section {
+      padding-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .right-section {
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .cta-button {
+      align-self: center;
+    }
+  }

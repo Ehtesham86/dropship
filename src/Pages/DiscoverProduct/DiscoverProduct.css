@@ -1,0 +1,183 @@
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding-right: 20px;
+    margin-top: 150px;
+    width: 10px;
+  }
+  
+  .right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    color: #4285f4;
+  }
+  
+  p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .start-trial {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .extension-info {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .chrome{
+    margin-left: 10px;
+    width: 150px;
+    height: 35px;
+  }
+  .chrome-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .user-avatars {
+    display: flex;
+    margin: 0 10px;
+    margin-top: 20px;
+  }
+  .user-avatars span{
+    margin-left: 10px;
+  }
+  .people {
+    width: 100px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: -10px;
+  }
+  
+  .product-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .stats-card {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    color: white
+  }
+  
+  .stats-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: blue;
+    padding: 10px;
+    width: 250px;
+
+  }
+  
+  .price {
+    font-weight: bold;
+  }
+  
+  .stats-body {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .stat-label {
+    font-size: 0.8rem;
+    color: #6c757d;
+  }
+  
+  .stat-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: blue;
+  }
+  .product-carousel {
+    position: relative;
+    width: 290px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    width: 50%;
+    height: 100%;
+    flex: 0 0 100%;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+  }
+  
+  .carousel-item.active {
+    opacity: 1;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-section, .right-section {
+      padding: 0;
+    }
+  
+    .product-image-container {
+      height: 200px;
+    }
+  
+    .stats-body {
+      flex-direction: column;
+    }
+  
+    .stat {
+      margin-bottom: 10px;
+    }
+  }

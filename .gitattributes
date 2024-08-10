@@ -1,0 +1,13 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted to LF upon checkout.
+*.js text
+*.json text
+*.html text
+*.css text
+
+# Binary files should be treated as binary and not have line endings changed.
+*.svg binary
+*.png binary
+*.jpg binary

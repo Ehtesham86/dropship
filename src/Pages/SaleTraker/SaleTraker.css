@@ -1,0 +1,101 @@
+.revenue-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff5f5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.info-section {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -50px;
+}
+
+.content-traker {
+  max-width: 400px;
+}
+.icon-traker{
+  display: flex;
+  flex-direction: row;
+}
+.icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #e74c3c;
+}
+
+.sale {
+  color: #e74c3c;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.try-free-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.try-free-btn:hover {
+  background-color: #c0392b;
+}
+
+.chart-section {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.revenue-chart {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .revenue-container {
+    flex-direction: column-reverse;
+  }
+
+  .info-section, .chart-section {
+    width: 100%;
+  }
+
+  .info-section {
+    padding: 20px;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,99 @@
+.dropship {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .main-title {
+    text-align: center;
+    color: #4285f4;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    margin-left: 400px;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    background-color: #e6f7ef;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .product-database h2 {
+    color: #28a745;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .product-database h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .product-database p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .try-free-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .try-free-btn:hover {
+    background-color: #218838;
+  }
+  
+  .right-section-dropship {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  
+  .product-list-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: -50px;
+  }
+  
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+    }
+  
+    .left-section, .right-section {
+      width: 100%;
+    }
+  
+    .right-section {
+      order: -1;
+    }
+  
+    .product-database h3 {
+      font-size: 1.5rem;
+    }
+  }
